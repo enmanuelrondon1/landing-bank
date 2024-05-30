@@ -39,7 +39,7 @@ export const BestBusiness = () => {
         </div>
         <div className="grid items-center py-5 md:p-8">
           {dataFeaturesBusiness.map(({ id, icon, title, description }) => (
-            <Reveal>
+            <Reveal key={id}>
               <div className="grid grid-flow-col gap-5 px-4 py-2 rounded-3xl group hover:bg-radialBlack">
                 <Image src={icon} alt={title} width={40} height={40} />
                 <div>

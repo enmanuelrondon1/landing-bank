@@ -33,7 +33,7 @@ export const ChooseYourCards = () => {
               {dataCards.map(({ image, id }) => (
                 <SwiperSlide key={id}>
                   <div className="relative w-full h-full">
-                    <Image
+                    <img
                       src={image}
                       alt="Credit card"
                       width="400"
